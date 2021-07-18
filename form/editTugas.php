@@ -1,0 +1,37 @@
+<?php
+  include '../util/utility.php';
+  include '../dbFunction/dbFunction.php';
+  session_start();
+  $id=$_GET['id'];
+  $tanggal = filter_input(INPUT_POST, "tanggal", FILTER_SANITIZE_SPECIAL_CHARS);
+    $matakuliah = filter_input(INPUT_POST, "nama", FILTER_SANITIZE_SPECIAL_CHARS);
+    $kodematakuliah = filter_input(INPUT_POST, "kode", FILTER_SANITIZE_SPECIAL_CHARS);
+    $ditujukan = filter_input(INPUT_POST, "ditujukan", FILTER_SANITIZE_SPECIAL_CHARS);
+    $jabatan = filter_input(INPUT_POST, "jabatan", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nama_instansi = filter_input(INPUT_POST, "instansi", FILTER_SANITIZE_SPECIAL_CHARS);
+    $alamat_instansi = filter_input(INPUT_POST, "alamat", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nama1 = filter_input(INPUT_POST, "nama1", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nrp1 = filter_input(INPUT_POST, "nrp1", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nama2 = filter_input(INPUT_POST, "nama2", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nrp2 = filter_input(INPUT_POST, "nrp2", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nama3 = filter_input(INPUT_POST, "nama3", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nrp3 = filter_input(INPUT_POST, "nrp3", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nama4 = filter_input(INPUT_POST, "nama4", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nrp4 = filter_input(INPUT_POST, "nrp4", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nama5 = filter_input(INPUT_POST, "nama5", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nrp5 = filter_input(INPUT_POST, "nrp5", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nama6 = filter_input(INPUT_POST, "nama6", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nrp6 = filter_input(INPUT_POST, "nrp6", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nama7 = filter_input(INPUT_POST, "nama7", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nrp7 = filter_input(INPUT_POST, "nrp7", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nama8 = filter_input(INPUT_POST, "nama8", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nrp8 = filter_input(INPUT_POST, "nrp8", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nama9 = filter_input(INPUT_POST, "nama9", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nrp9 = filter_input(INPUT_POST, "nrp9", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nama10 = filter_input(INPUT_POST, "nama10", FILTER_SANITIZE_SPECIAL_CHARS);
+    $nrp10 = filter_input(INPUT_POST, "nrp10", FILTER_SANITIZE_SPECIAL_CHARS);
+    $user_nrp = $_SESSION['nrp'];
+    editTugas1($tanggal, $matakuliah, $kodematakuliah, $ditujukan, $jabatan, $nama_instansi, $alamat_instansi, $user_nrp, $id);
+    editTugas2($nama1, $nrp1, $nama2, $nrp2, $nama3, $nrp3, $nama4, $nrp4, $nama5, $nrp5, $nama6, $nrp6, $nama7, $nrp7, $nama8, $nrp8, $nama9, $nrp9, $nama10, $nrp10, $user_nrp, $id);
+  header("location:../user/history.php");
+ ?>

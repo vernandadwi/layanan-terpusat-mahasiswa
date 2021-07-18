@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.table {
+  width: 100%;
+}
+.table thead th {
+  padding: 10px 10px;
+  background: #00adee;
+  font-size: 15px;
+  text-transform: uppercase;
+  vertical-align: top;
+  color: #1D4A5A;
+  font-weight: normal;
+  text-align: left;
+}
+.table tbody tr td {
+  padding: 10px;
+  background: #f2f2f2;
+  font-size: 14px;
+}
+
+.add, .edit, .save, .delete {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.edit, .save, .delete {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.add {
+  float: right;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 0;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+.add:hover {
+  background: #ffffff;
+  color: #00adee;
+}
+
+.save {
+  display: none;
+  background: #32AD60;
+  color: #ffffff;
+}
+.save:hover {
+  background: #27854a;
+}
+
+.edit {
+  background: #2199e8;
+  color: #ffffff;
+}
+.edit:hover {
+  background: #147dc2;
+}
+
+.delete {
+  background: #EC5840;
+  color: #ffffff;
+}
+.delete:hover {
+  background: #e23317;
+}
+
+h3{
+  font-family: Calibri; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:#1D4A5A;
+  text-align: center; 
+  text-decoration: underline
+}
+
+/*tombol add*/
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 12px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+.blue
+{
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+}
+
+.action-button:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
